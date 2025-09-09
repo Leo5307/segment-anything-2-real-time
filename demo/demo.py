@@ -26,8 +26,9 @@ model_cfg = "configs/sam2.1/sam2.1_hiera_s.yaml"
 predictor = build_sam2_camera_predictor(model_cfg, sam2_checkpoint)
 
 
-cap = cv2.VideoCapture("../notebooks/videos/aquarium/aquarium.mp4")
+# cap = cv2.VideoCapture("../notebooks/videos/aquarium/aquarium.mp4")
 
+cap = cv2.VideoCapture(4)
 if_init = False
 tracking_i = 0
 
